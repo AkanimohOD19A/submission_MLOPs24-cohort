@@ -49,12 +49,18 @@ Our standard training pipeline consists of several steps:
 
 ![img_1.png](img_1.png)
 
-You should have zenml after this. Now run the __run_pipeline__ script with the stated parameters:
+You should have zenml after this. 
+Now run the __run_pipeline__ script with the stated parameters for the period in review:
 - taxi-type: "-t" yellow or green
 - year: "-y" year
 - month: "-m" month
 
 E.g `python run_pipeline.py -t yellow -y 2023 -m 07`
+
+For time management, a sample is taken and a simple Linear Regression is trained on this.
+
+Now `zenml up`, if you are on windows `zenml up --blocking` - this will launch a UI to review your steps/pipeline,
+like in the image above.
 
 The script would run the training pipeline and store the results from training, it also returns the mlflow artifact
 directory to review the *r2*, *mse* and *rmse* trained values.
