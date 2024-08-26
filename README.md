@@ -17,9 +17,12 @@ lifecycle using (zenml)[] orchestration tool.
 How to use this:
 
 ```chatinput
-git clone
+git clone https://github.com/AkanimohOD19A/submission_MLOPs24-cohort.git .
 
 cd .
+```
+SetUp your virtual environment name
+```
 python3 -m venv <env_name>
 <env_name>/Scripts/activate
 ```
@@ -43,7 +46,7 @@ zenml model-deployer register mlflow --flavor=mlflow
 zenml stack register local-mlflow-stack -a default -o default -d mlflow -e mlflow_tracker --set
 ```
 
-You should see this registered whenyou run:
+You should see the registered stack when you run:
 `zenml stack describe`
 
 Training Pipeline
@@ -60,9 +63,9 @@ Our standard training pipeline consists of several steps:
 
 You should have zenml after this. 
 Now run the __run_pipeline__ script with the stated parameters for the period in review:
-- taxi-type: "-t" yellow or green
-- year: "-y" year
-- month: "-m" month
+- taxi-type: "-t" #yellow or green
+- year: "-y" #year
+- month: "-m" #month
 
 E.g `python run_pipeline.py -t yellow -y 2023 -m 07`
 
@@ -71,7 +74,7 @@ For time management, a sample is taken and a simple Linear Regression is trained
 Now `zenml up`, if you are on windows `zenml up --blocking` - this will launch a UI to review your steps/pipeline,
 like in the image above.
 
-The script would run the training pipeline and store the results from training, it also returns the mlflow artifact
+The script would run the training pipeline and store the results/artifacts from training, it also returns the mlflow artifact
 directory to review the *r2*, *mse* and *rmse* trained values.
 
 ![img.png](img.png)
