@@ -1,4 +1,13 @@
-### Predicting NYC Taxi Rides Duration
+## Title: Taxi Ride Duration Prediction
+
+#### Project Overview
+The objective of this project is to develop a predictive model that estimates the duration of taxi rides in urban areas. By leveraging data such as traffic conditions, weather, time of day, and ride distance, the model aims to provide accurate predictions that can enhance operational efficiency for taxi services. The model will be trained on historical taxi ride data, which includes timestamps, geolocation coordinates, and ride durations. This project seeks to optimize taxi fleet management and improve customer satisfaction by reducing wait times and providing reliable estimates for ride durations.
+
+#### Problem Statement
+Urban transportation is a complex system influenced by various dynamic factors that can significantly affect the duration of taxi rides. These factors include traffic congestion, road closures, weather conditions, and the time of day. Accurately predicting taxi ride durations is a challenge that has direct implications for the efficiency of taxi operations and the satisfaction of passengers. The goal of this project is to construct a machine learning model capable of forecasting the time a taxi ride will take, given the starting point, destination, and other relevant variables. Such a model can assist taxi companies in dispatching their fleets more effectively and offering better service to their customers.
+
+
+### Get Started: Predicting NYC Taxi Rides Duration
 
 This is my submission for the MLOPs 2024 cohort for DataTalks.
 
